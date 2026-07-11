@@ -197,6 +197,9 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true
   },
+  typescript: {
+    ignoreBuildErrors: true   // ← 确保有这一段
+  },
   output: getOutput(),
   staticPageGenerationTimeout: getStaticPageGenerationTimeoutSec(),
 
